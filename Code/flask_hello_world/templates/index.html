@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Flask</title>
+    <style>
+        body {
+            background-color: {{ background_color }};
+            color: black; /* White text to make it readable against the background */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Flask App!</h1>
+    
+    <div class="info">
+        <p>Background Color: <strong>{{ background_color }}</strong></p>
+        <p>Hostname: <strong>{{ hostname }}</strong></p>
+        <p>Network: <strong>{{ network }}</strong></p>
+    </div>
+
+</body>
+</html>
